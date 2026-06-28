@@ -6,18 +6,6 @@ A Python-based web scraping project that collects revenue data of the world's la
 
 ---
 
-## 📋 Table of Contents
-- [About](#about)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Data Description](#data-description)
-- [Output](#output)
-- [Important Notes](#important-notes)
-- [License](#license)
-
----
 
 ## 📌 About
 
@@ -49,80 +37,7 @@ biomedical-webscraping/
 └── README.md                           # Project documentation
 ```
 
----
-
-## ⚙️ Installation
-
-2. **Install required libraries**
-```bash
-pip install requests beautifulsoup4 pandas
 ```
-
-Or install from requirements.txt:
-```bash
-pip install -r requirements.txt
-```
-
-> ⚠️ If using Python 3.14, use:
-> ```bash
-> "C:\Program Files\Python314\python.exe" -m pip install requests beautifulsoup4 pandas
-> ```
-
----
-
-## 🚀 Usage
-
-Run the scraper script:
-```bash
-python scraper.py
-```
-
-The script will:
-1. Send an HTTP request to the Wikipedia page
-2. Parse the HTML table using BeautifulSoup
-3. Clean footnotes and special characters from the data
-4. Save the cleaned data to `biomedical_companies_cleaned.csv`
-
----
-
-## 📊 Data Description
-
-The scraped dataset contains the following columns:
-
-| Column | Description |
-|---|---|
-| `Rank` | Company rank by revenue |
-| `Chg` | Change in rank |
-| `Company` | Company name |
-| `Country` | Country of origin |
-| `Traded on` | Stock exchange listing |
-| `2025` | Revenue in 2025 (Billion USD) |
-| `2024` | Revenue in 2024 (Billion USD) |
-| `2023` | Revenue in 2023 (Billion USD) |
-| `2022` | Revenue in 2022 (Billion USD) |
-| `2021` | Revenue in 2021 (Billion USD) |
-| `2020` | Revenue in 2020 (Billion USD) |
-| `2019` | Revenue in 2019 (Billion USD) |
-| `2018` | Revenue in 2018 (Billion USD) |
-| `2017` | Revenue in 2017 (Billion USD) |
-| `2016` | Revenue in 2016 (Billion USD) |
-
----
-
-## 📤 Output
-
-After running the script, you will get:
-
-✅ `biomedical_companies_cleaned.csv` — A clean, structured CSV file containing revenue data of the top biomedical companies from 2016 to 2025.
-
-Sample output:
-
-| Rank | Company | Country | 2025 | 2024 | 2023 |
-|---|---|---|---|---|---|
-| 1 | Johnson & Johnson | USA | 94.1 | 88.8 | 85.2 |
-| 2 | Sinopharm | CHN | 81.3 | 83.6 | 79.4 |
-| 3 | Roche | CHE | 80.5 | 66.5 | 67.8 |
-
 ---
 
 ## ⚠️ Important Notes
@@ -140,8 +55,3 @@ Sample output:
 This project is licensed under the **MIT License** — free to use, modify, and distribute.
 
 ---
-
-## 👤 Author
-
-**Tekyo**
-- GitHub: [@tekyo](https://github.com/tekyo)
