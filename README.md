@@ -1,2 +1,147 @@
 # CodeAlpha_WebScraping
 A Codealpha -Data analytics Project task focusing on how to scrap websites
+# 🕷️ Biomedical Companies Web Scraping
+
+A Python-based web scraping project that collects revenue data of the world's largest biomedical companies from Wikipedia, cleans the data, and saves it as a structured CSV file for further analysis.
+
+---
+
+## 📋 Table of Contents
+- [About](#about)
+- [Technologies Used](#technologies-used)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Data Description](#data-description)
+- [Output](#output)
+- [Important Notes](#important-notes)
+- [License](#license)
+
+---
+
+## 📌 About
+
+This project scrapes the **List of Largest Biomedical Companies by Revenue** from Wikipedia using Python. It extracts company names, countries, stock exchange listings, and annual revenue figures from 2016 to 2025. The raw data is cleaned to remove Wikipedia footnotes and special characters, then saved as a clean CSV file ready for analysis.
+
+**Data Source:** [Wikipedia — List of Largest Biomedical Companies by Revenue](https://en.wikipedia.org/wiki/List_of_largest_biomedical_companies_by_revenue)
+
+---
+
+## 🛠️ Technologies Used
+
+| Library | Purpose |
+|---|---|
+| `Python 3.14` | Programming language |
+| `requests` | Sending HTTP requests to fetch web pages |
+| `BeautifulSoup4` | Parsing and extracting HTML content |
+| `pandas` | Data manipulation and CSV export |
+| `re` | Cleaning footnotes and special characters |
+
+---
+
+## 📁 Project Structure
+
+```
+biomedical-webscraping/
+├── Task I_Web Scraping.py              # Main scraping script
+├── biomedical_companies_cleaned.csv    # Cleaned output data
+├── requirements.txt                    # Required libraries
+└── README.md                           # Project documentation
+```
+
+---
+
+## ⚙️ Installation
+
+2. **Install required libraries**
+```bash
+pip install requests beautifulsoup4 pandas
+```
+
+Or install from requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+
+> ⚠️ If using Python 3.14, use:
+> ```bash
+> "C:\Program Files\Python314\python.exe" -m pip install requests beautifulsoup4 pandas
+> ```
+
+---
+
+## 🚀 Usage
+
+Run the scraper script:
+```bash
+python scraper.py
+```
+
+The script will:
+1. Send an HTTP request to the Wikipedia page
+2. Parse the HTML table using BeautifulSoup
+3. Clean footnotes and special characters from the data
+4. Save the cleaned data to `biomedical_companies_cleaned.csv`
+
+---
+
+## 📊 Data Description
+
+The scraped dataset contains the following columns:
+
+| Column | Description |
+|---|---|
+| `Rank` | Company rank by revenue |
+| `Chg` | Change in rank |
+| `Company` | Company name |
+| `Country` | Country of origin |
+| `Traded on` | Stock exchange listing |
+| `2025` | Revenue in 2025 (Billion USD) |
+| `2024` | Revenue in 2024 (Billion USD) |
+| `2023` | Revenue in 2023 (Billion USD) |
+| `2022` | Revenue in 2022 (Billion USD) |
+| `2021` | Revenue in 2021 (Billion USD) |
+| `2020` | Revenue in 2020 (Billion USD) |
+| `2019` | Revenue in 2019 (Billion USD) |
+| `2018` | Revenue in 2018 (Billion USD) |
+| `2017` | Revenue in 2017 (Billion USD) |
+| `2016` | Revenue in 2016 (Billion USD) |
+
+---
+
+## 📤 Output
+
+After running the script, you will get:
+
+✅ `biomedical_companies_cleaned.csv` — A clean, structured CSV file containing revenue data of the top biomedical companies from 2016 to 2025.
+
+Sample output:
+
+| Rank | Company | Country | 2025 | 2024 | 2023 |
+|---|---|---|---|---|---|
+| 1 | Johnson & Johnson | USA | 94.1 | 88.8 | 85.2 |
+| 2 | Sinopharm | CHN | 81.3 | 83.6 | 79.4 |
+| 3 | Roche | CHE | 80.5 | 66.5 | 67.8 |
+
+---
+
+## ⚠️ Important Notes
+
+- Always check a website's `robots.txt` before scraping
+- A **User-Agent header** is required to access Wikipedia programmatically
+- Add `time.sleep()` between requests to avoid overloading servers
+- This project is for **educational and research purposes only**
+- Respect the website's **Terms of Service**
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** — free to use, modify, and distribute.
+
+---
+
+## 👤 Author
+
+**Tekyo**
+- GitHub: [@tekyo](https://github.com/tekyo)
