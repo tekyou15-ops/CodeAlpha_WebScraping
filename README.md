@@ -6,7 +6,6 @@ A Python-based web scraping project that collects revenue data of the world's la
 
 ---
 
-
 ## 📌 About
 
 This project scrapes the **List of Largest Biomedical Companies by Revenue** from Wikipedia using Python. It extracts company names, countries, stock exchange listings, and annual revenue figures from 2016 to 2025. The raw data is cleaned to remove Wikipedia footnotes and special characters, then saved as a clean CSV file ready for analysis.
